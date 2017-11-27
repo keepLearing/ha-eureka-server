@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>ha-eureka-server</name>
-	<description>服务注册</description>
+	<description>服务注册发现</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
