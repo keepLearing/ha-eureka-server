@@ -1,0 +1,29 @@
+#clusetr config
+spring:
+  application:
+    name:ha-eukara-server
+
+#register to eureka server
+eureka:
+  client:
+    register-with-eureka:false
+
+#get register info, default is true 
+eureka:
+  client:
+    fetch-registry:false
+
+#cluster1
+spring:
+  profiles:eurekaServer1
+#port
+server:
+  port:8000
+  
+eureka:
+  instance:
+    hostname:eurekaServer1
+  client:
+    serviceUrl:
+      #register to eurekaServer2
+      defaultZone: http://eurekaServer2:8001/eureka
