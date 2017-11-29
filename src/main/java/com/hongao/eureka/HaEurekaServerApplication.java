@@ -1,4 +1,4 @@
-package com.hongao.core.eureka;
+package com.hongao.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,8 +14,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class HaEurekaServerApplication {
 
 	public static void main(String[] args) {
-		System.out.println("ha eureka server is starting...");
+		System.out.println("Ha-Eureka-Server is starting...");
 		SpringApplication.run(HaEurekaServerApplication.class, args);
-		System.out.println("ha eureka server has started...");
+		System.out.println("Ha-Eureka-Server has started...");
 	}
 }
